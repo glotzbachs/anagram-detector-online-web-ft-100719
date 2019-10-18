@@ -8,11 +8,10 @@ attr_accessor :word
   end
   
   def match(list)
-    
     answer=[]
-    list.each do |word|
-      if @word.split("").sort==word.split("").sort
-        answer<< word
+    list.each do |mix|
+      if @word.split("").sort==mix.split("").sort
+        answer<< mix
       end
       
     end
