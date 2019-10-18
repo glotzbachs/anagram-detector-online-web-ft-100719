@@ -8,7 +8,13 @@ attr_accessor :word
   end
   
   def match(list)
-    
+    answer=[]
+    list.each do |word|
+      if word.split("").sort == @word.split.sort
+        answer<< word
+      end
+      
+    end
     
   end
   
