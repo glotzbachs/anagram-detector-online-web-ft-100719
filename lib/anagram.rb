@@ -11,7 +11,7 @@ attr_accessor :word
     
     answer=[]
     list.each do |word|
-      if @word.split.sort==word.split("").sort
+      if @word.split("").sort==word.split("").sort
         answer<< word
       end
       
