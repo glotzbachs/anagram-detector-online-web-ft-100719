@@ -13,9 +13,8 @@ attr_accessor :word
       if @word.split("").sort==mix.split("").sort
         answer<< mix
       end
-      
     end
-    
+    answer
   end
   
   
