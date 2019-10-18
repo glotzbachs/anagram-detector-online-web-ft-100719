@@ -10,7 +10,7 @@ attr_accessor :word
   def match(list)
     answer=[]
     list.each do |word|
-      if word.split("").sort == @word.split.sort
+      if @word.split.sort==word.split("").sort
         answer<< word
       end
       
